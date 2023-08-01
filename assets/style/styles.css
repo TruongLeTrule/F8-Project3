@@ -1,0 +1,61 @@
+/* Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  font-size: 62.5%;
+}
+
+:root {
+  --btn-hover-color: #2e80ce;
+}
+
+/* Common */
+.main-content {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  font-weight: 300;
+}
+
+a {
+  color: #c9d2da;
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  background: #10375c;
+}
+
+nav .body {
+  display: flex;
+}
+
+/* Navbar */
+nav {
+  margin-top: 70px;
+  background: #10375c;
+}
+
+nav a {
+  color: #c9d2da;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+}
+
+nav ul {
+  margin-left: 304px;
+  display: flex;
+  gap: 42px;
+}
+
+nav .cta-group {
+  margin-left: 222px;
+}
