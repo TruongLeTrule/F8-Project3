@@ -18,18 +18,34 @@ body {
 }
 
 /* Common */
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 1170px;
   max-width: calc(100% - 48px);
   margin: 0 auto;
 }
 
-p {
-  font-weight: 300;
+.heading {
+  --size: 5rem;
+  --line-height: normal;
+  --letter-space: normal;
+  color: #10375c;
+  font-size: var(--size);
+  font-weight: 600;
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-space);
 }
 
-a {
-  text-decoration: none;
+.desc {
+  --line-height: 166%;
+  --size: 1.8rem;
+  color: #575f66;
+  font-size: var(--size);
+  line-height: var(--line-height);
+  font-weight: 300;
 }
 
 .btn {
@@ -176,21 +192,18 @@ a {
 }
 
 .hero__heading {
+  --size: 7rem;
+  --leter-space: -1.4px;
+  --line-height: 114%;
   width: 517px;
   color: #fff;
-  font-size: 7rem;
   font-weight: 600;
-  line-height: 114%;
-  letter-spacing: -1.4px;
 }
 
 .hero__desc {
   margin-top: 22px;
   width: 468px;
   color: #c9d2da;
-  font-size: 1.8rem;
-  font-weight: 300;
-  line-height: 167%;
 }
 
 .hero__row {
@@ -232,4 +245,89 @@ a {
 .hero__image:last-child {
   width: 210px;
   height: 410px;
+}
+
+/* Service */
+.service {
+  padding: 170px 0;
+}
+
+.service__top {
+  text-align: center;
+}
+
+.service__heading {
+  --line-height: 120%;
+  --letter-space: -1px;
+}
+
+.service__heading-desc {
+  display: inline-block;
+  width: 468px;
+  margin-top: 18px;
+}
+
+.service__body {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service__image {
+  width: 570px;
+  height: 570px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 12px;
+}
+
+.service-item {
+  padding: 21px;
+  border-radius: 10px;
+  width: 470px;
+  display: flex;
+  transition: 0.15s;
+}
+
+.service-item:hover {
+  position: relative;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.service-item__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background: #eff6fd;
+  color: #10375c;
+  border-radius: 50%;
+  transition: 0.23s;
+}
+
+.service-item:hover .service-item__icon {
+  background-color: #2e80ce;
+  color: #fff;
+}
+
+.service-item__content {
+  margin-left: 19px;
+}
+
+.service-item__name {
+  --size: 1.8rem;
+  --line-height: 127%;
+}
+
+.service-item__desc {
+  --size: 1.6rem;
+  --line-height: 175%;
+  margin-top: 8px;
+}
+
+.service__btn {
+  margin-top: 55px;
 }
