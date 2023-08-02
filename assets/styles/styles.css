@@ -10,6 +10,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Sora", sans-serif;
+  font-style: normal;
 }
 
 :root {
@@ -40,7 +41,6 @@ a {
   min-width: 205px;
   padding: 0 20px;
   font-size: 1.6rem;
-  font-style: normal;
   text-align: center;
   border: 1px solid #2e80ce;
   line-height: var(--height);
@@ -52,6 +52,13 @@ a {
   opacity: 92%;
   cursor: pointer;
 }
+
+/* .sticky {
+  position: sticky;
+  top: 30px;
+  z-index: 2;
+  background: var(--header-bg);
+} */
 
 /* Header */
 .header {
@@ -105,7 +112,6 @@ a {
   display: block;
   color: #fff;
   font-size: 1.8em;
-  font-style: normal;
   font-weight: 400;
 }
 
@@ -121,10 +127,9 @@ a {
 }
 
 .navbar__link,
-.action__login {
+.header-action__login {
   color: #c9d2da;
   font-size: 1.6rem;
-  font-style: normal;
   font-weight: 300;
 }
 
@@ -146,9 +151,85 @@ a {
   top: -4px;
 }
 
-/* Action */
-.action__signup {
+/* header action */
+.header-action {
+  display: flex;
+  align-items: center;
+}
+
+.header-action__signup {
   --height: 44px;
   margin-left: 28px;
   min-width: 104px;
+}
+
+/* Hero */
+.hero {
+  margin-top: 76px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Hero content */
+.hero__content {
+  width: 44%;
+}
+
+.hero__heading {
+  width: 517px;
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 114%;
+  letter-spacing: -1.4px;
+}
+
+.hero__desc {
+  margin-top: 22px;
+  width: 468px;
+  color: #c9d2da;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 167%;
+}
+
+.hero__row {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.hero__phone-number {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+/* Hero media */
+.hero__media {
+  flex-grow: 1;
+}
+
+.hero__images {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hero__image {
+  width: 330px;
+  height: 540px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.hero__image:first-child {
+  position: relative;
+  margin-right: -6px;
+}
+
+.hero__image:last-child {
+  width: 210px;
+  height: 410px;
 }
