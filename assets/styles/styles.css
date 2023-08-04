@@ -331,3 +331,62 @@ a {
 .service__btn {
   margin-top: 55px;
 }
+
+/* How it works */
+.work {
+  padding: 100px 0;
+  background: #f6fbff;
+}
+
+.work__heading {
+  --line-height: 120%;
+  --letter-space: -1px;
+}
+
+.work__desc {
+  width: 468px;
+  margin-top: 18px;
+}
+
+.work__list {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+
+.work-item {
+  padding: 43px;
+  border-radius: 4px;
+  background: #fff;
+  border: 16px solid #eaf6ff;
+  transition: 0.25s;
+}
+
+.work-item:hover {
+  border: 16px solid #2e80ce;
+  transform: translateY(-16px);
+}
+
+.work-item__heading {
+  --size: 2.6rem;
+  --line-height: 138%;
+  margin-top: 18px;
+}
+
+.work-item__desc {
+  margin-top: 28px;
+}
+
+.work-item__desc,
+.work-item__more {
+  --line-height: 175%;
+  --size: 1.6rem;
+}
+
+.work-item__more {
+  display: inline-block;
+  margin-top: 18px;
+  color: #2e80ce;
+  font-weight: 400px;
+}
