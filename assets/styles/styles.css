@@ -538,3 +538,44 @@ a {
   color: #fff;
   cursor: pointer;
 }
+
+/* Install */
+.install {
+  padding: 265px 0 170px 0;
+}
+
+.install__row {
+  padding: 0 70px;
+  border-radius: 4px;
+  background: #2e80ce;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.install__image {
+  display: block;
+  margin-top: -95px;
+  width: 284px;
+  height: 522px;
+  object-fit: cover;
+}
+
+.install__content {
+  width: 57%;
+}
+
+.install__heading {
+  color: #fff;
+}
+
+.install__desc {
+  color: #fff;
+  margin-top: 18px;
+}
+
+.install__btn-group {
+  margin-top: 38px;
+  display: flex;
+  gap: 28px;
+}
