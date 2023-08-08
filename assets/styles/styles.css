@@ -716,3 +716,8 @@ a {
 .appointment__btn {
   margin-top: 38px;
 }
+
+/* Footer */
+.footer {
+  background: var(--header-bg);
+}
