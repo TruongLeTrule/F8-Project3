@@ -808,36 +808,34 @@ a {
   color: #fff;
 }
 
-.footer-column__cta-group {
+.footer-form {
   margin-top: 10px;
   display: flex;
   gap: 12px;
 }
 
-.footer-column__mail-box {
+.footer-form__input {
+  padding: 0 10px;
   width: 212px;
   height: 46px;
-  display: flex;
-  align-items: center;
   border-radius: 4px;
   padding: 10px;
   border: 1px solid #406181;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
 }
 
-.footer-column__mail-box:hover {
-  cursor: pointer;
-}
-
-.footer-column__mail-box--content {
-  color: #9ca8b1;
+.footer-form__input::placeholder {
   font-family: "Open Sans";
   font-size: 1.4rem;
-  font-style: normal;
   font-weight: 400;
   line-height: 185%;
+  letter-spacing: 0em;
+  color: #9ca8b1;
 }
 
-.footer-column__btn {
+.footer-form__submit {
   width: 108px;
   height: 46px;
   border-radius: 4px;
@@ -851,7 +849,7 @@ a {
   line-height: 185%;
 }
 
-.footer-column__btn:hover {
+.footer-form__submit:hover {
   cursor: pointer;
   opacity: 90%;
 }
